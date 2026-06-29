@@ -1,0 +1,9 @@
+# Rust build artifacts
+/rust/target/
+
+# Python
+__pycache__/
+*.pyc
+
+# Extraction outputs
+*_extracted/

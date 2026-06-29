@@ -1,0 +1,18 @@
+[package]
+name = "rbxl-engine"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "rbxl-engine"
+path = "src/main.rs"
+
+[dependencies]
+rbx_dom_weak = "2.7"
+rbx_binary = "0.7"
+rbx_xml = "0.13"
+rbx_types = "1.8"
+serde_json = "1"
+
+[profile.release]
+opt-level = 2
