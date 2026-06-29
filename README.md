@@ -71,6 +71,8 @@ CFrame / Color3. For full property fidelity, use the Rust engine (the default).
 
 # rbxl-to-folder(中文)
 
+**儲存庫:** <https://github.com/chanLik1208-dev/rbxl-to-folder>
+
 把 Roblox 的 place / model 檔解開成 **AI 容易閱讀的資料夾檔案樹**(以腳本原始碼為主 + 完整階層大綱)。
 
 支援輸入:`.rbxl`、`.rbxlx`、`.rbxm`、`.rbxmx`。
