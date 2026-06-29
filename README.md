@@ -1,5 +1,7 @@
 # rbxl-to-folder
 
+**Repository:** <https://github.com/chanLik1208-dev/rbxl-to-folder>
+
 Unpack a Roblox place / model file into an **AI-readable folder tree** — script
 source code first, plus a full hierarchy outline.
 
