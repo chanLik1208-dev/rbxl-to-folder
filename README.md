@@ -1,6 +1,6 @@
 # rbxl-to-folder
 
-**Repository:** <https://github.com/chanLik1208-dev/rbxl-to-folder>
+**English** | [中文](#rbxl-to-folder中文)
 
 Unpack a Roblox place / model file into an **AI-readable folder tree** — script
 source code first, plus a full hierarchy outline.
@@ -71,7 +71,7 @@ CFrame / Color3. For full property fidelity, use the Rust engine (the default).
 
 # rbxl-to-folder(中文)
 
-**儲存庫:** <https://github.com/chanLik1208-dev/rbxl-to-folder>
+[English](#rbxl-to-folder) | **中文**
 
 把 Roblox 的 place / model 檔解開成 **AI 容易閱讀的資料夾檔案樹**(以腳本原始碼為主 + 完整階層大綱)。
 
