@@ -349,7 +349,10 @@ def materialize(node, dst_dir, src_root, inst_path, manifest):
             folder = os.path.join(dst_dir, sanitize(node["name"]))
             os.makedirs(folder, exist_ok=True)
             init_name = "init" + suffix
-            with open(os.path.join(folder, init_name), "w", encoding="utf-8") as fh:
+            # newline="" -> write Source bytes verbatim (no \n->\r\n on Windows),
+            # so folder-to-rbxl can re-inject byte-for-byte faithfully.
+            with open(os.path.join(folder, init_name), "w",
+                      encoding="utf-8", newline="") as fh:
                 fh.write(source)
             entry["file"] = os.path.relpath(
                 os.path.join(folder, init_name), src_root).replace("\\", "/")
@@ -357,7 +360,7 @@ def materialize(node, dst_dir, src_root, inst_path, manifest):
         else:
             fname = sanitize(node["name"]) + suffix
             fpath = os.path.join(dst_dir, _unique_file(dst_dir, fname))
-            with open(fpath, "w", encoding="utf-8") as fh:
+            with open(fpath, "w", encoding="utf-8", newline="") as fh:
                 fh.write(source)
             entry["file"] = os.path.relpath(fpath, src_root).replace("\\", "/")
     else:
